@@ -3,6 +3,17 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+st.set_page_config(
+   page_title="Steve",
+   page_icon="😎",
+   layout= "wide", #"centered",
+   initial_sidebar_state = "auto",
+   menu_items={
+      'Get Help': 'https://www.extremelycoolapp.com/help',
+      'Report a bug': "https://www.extremelycoolapp.com/bug",
+      'About': "# This is a header. This is an *extremely* cool app!"
+   },
+)
 
 # Add a selectbox to the sidebar:
 add_selectbox = st.sidebar.selectbox(
